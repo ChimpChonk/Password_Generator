@@ -20,14 +20,44 @@ namespace PasswordGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
+        int currentPasswordLength = 0;
+        Random character = new Random();
+
+        private void PasswordGenerator(int passwordLength)
+        {
+            string allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@$%^&*";
+            string randomPassword = "";
+
+            for(int i=0; i < passwordLength; i++)
+            {
+                int randomNum = character.Next(0, allCharacters.Length);
+                randomPassword += allCharacters[randomNum];
+            }
+
+            PasswordLabel.Content = randomPassword;
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            slider.Minimum = 5;
+            slider.Maximum = 20;
+            PasswordGenerator(5);
+
         }
 
-        private void submitButton_Click(object sender, RoutedEventArgs e)
+        private void slider_ValueChanged(object sender, EventArgs e)
         {
-            MessageBox.Show($"Hello {firstNameText.Text}");
+            currentPasswordLength = (int)slider.Value;
+            PasswordLengthLabel.Content = "Password Length: " + slider.Value.ToString();
+            PasswordGenerator(currentPasswordLength);
+
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText((string)PasswordLabel.Content);
+        }
+
     }
 }
