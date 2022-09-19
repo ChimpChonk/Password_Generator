@@ -4,15 +4,105 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator"
-        mc:Ignorable="d" FontSize="18"
-        Title="Password_Generator_v1.0" Height="310" Width="450" WindowStyle="ThreeDBorderWindow" Background="#FF3C3939" Foreground="White">
+        mc:Ignorable="d"
+        FontSize="18"
+        Title="Password_Generator_v1.0"
+        Height="310"
+        Width="450"
+        WindowStyle="ThreeDBorderWindow"
+        Background="#FF3C3939"
+        Foreground="White">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Password Generator" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Foreground="#FF0DFF23"/>
-        <Label x:Name="PasswordLabel" Content="Label" HorizontalAlignment="Center" Margin="84,64,74,0" VerticalAlignment="Top" Width="284" FontFamily="Leelawadee" FontSize="20" FontWeight="Bold" Foreground="#FFE20000" HorizontalContentAlignment="Center"/>
-        <Label x:Name="PasswordLengthLabel" Content="Password Length: 5" HorizontalAlignment="Center" Margin="119,112,109,0" VerticalAlignment="Top" Width="214" FontWeight="Bold" Foreground="#FF00DCFF" HorizontalContentAlignment="Center"/>
-        <Slider x:Name="slider" HorizontalAlignment="Center" Margin="119,163,109,0" VerticalAlignment="Top" Width="214" ValueChanged="slider_ValueChanged" IsSnapToTickEnabled="True"/>
-        <Button x:Name="button" Content="Copy" HorizontalAlignment="Center" Margin="147,203,137,0" VerticalAlignment="Top" Width="158" HorizontalContentAlignment="Center" Click="button_Click" FontWeight="Bold" Foreground="White" Background="#FF575757"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="5" />
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+
+
+        <TextBlock x:Name="textBlock"
+                   TextWrapping="Wrap"
+                   Text="Password Manager"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Foreground="#FF0DFF23"
+                   TextAlignment="Center" />
+
+        <Button x:Name="PGenerator"
+                Grid.Column="1"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                Content="Generate Password"
+                Width="200"
+                Height="50"
+                HorizontalAlignment="Center"/>
+
+        <Button x:Name="LManager"
+                Grid.Column="1"
+                Grid.Row="3"
+                Grid.ColumnSpan="3"
+                Content="Login Manager"
+                Width="200"
+                Height="50"/>
+
+
+        <!--
+        <Label x:Name="PasswordLabel"
+               Content="Label"
+               HorizontalAlignment="Center"
+               Margin="84,64,74,0"
+               VerticalAlignment="Top"
+               Width="284"
+               FontFamily="Leelawadee"
+               FontSize="20"
+               FontWeight="Bold"
+               Foreground="#FFE20000"
+               HorizontalContentAlignment="Center" />
+
+        <Label x:Name="PasswordLengthLabel"
+               Content="Password Length: 5"
+               HorizontalAlignment="Center"
+               Margin="119,112,109,0"
+               VerticalAlignment="Top"
+               Width="214"
+               FontWeight="Bold"
+               Foreground="#FF00DCFF"
+               HorizontalContentAlignment="Center" />
+
+        <Slider x:Name="slider"
+                HorizontalAlignment="Center"
+                Margin="119,163,109,0"
+                VerticalAlignment="Top"
+                Width="214"
+                ValueChanged="slider_ValueChanged"
+                IsSnapToTickEnabled="True" />
+
+        <Button x:Name="button"
+                Content="Copy"
+                HorizontalAlignment="Center"
+                Margin="147,203,137,0"
+                VerticalAlignment="Top"
+                Width="158"
+                HorizontalContentAlignment="Center"
+                Click="button_Click"
+                FontWeight="Bold"
+                Foreground="White"
+                Background="#FF575757" />
+        -->
     </Grid>
 </Window>
