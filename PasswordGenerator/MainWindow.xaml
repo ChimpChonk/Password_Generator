@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PasswordGenerator"
         mc:Ignorable="d"
         FontSize="18"
-        Title="Password_Generator_v1.0"
+        Title="Password_Generator_v2.0"
         Height="310"
         Width="450"
         WindowStyle="ThreeDBorderWindow"
@@ -30,7 +30,6 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="5" />
         </Grid.RowDefinitions>
-
 
         <TextBlock x:Name="textBlock"
                    TextWrapping="Wrap"
@@ -60,49 +59,9 @@
                 Width="200"
                 Height="50"/>
 
-
-        <!--
-        <Label x:Name="PasswordLabel"
-               Content="Label"
-               HorizontalAlignment="Center"
-               Margin="84,64,74,0"
-               VerticalAlignment="Top"
-               Width="284"
-               FontFamily="Leelawadee"
-               FontSize="20"
-               FontWeight="Bold"
-               Foreground="#FFE20000"
-               HorizontalContentAlignment="Center" />
-
-        <Label x:Name="PasswordLengthLabel"
-               Content="Password Length: 5"
-               HorizontalAlignment="Center"
-               Margin="119,112,109,0"
-               VerticalAlignment="Top"
-               Width="214"
-               FontWeight="Bold"
-               Foreground="#FF00DCFF"
-               HorizontalContentAlignment="Center" />
-
-        <Slider x:Name="slider"
-                HorizontalAlignment="Center"
-                Margin="119,163,109,0"
-                VerticalAlignment="Top"
-                Width="214"
-                ValueChanged="slider_ValueChanged"
-                IsSnapToTickEnabled="True" />
-
-        <Button x:Name="button"
-                Content="Copy"
-                HorizontalAlignment="Center"
-                Margin="147,203,137,0"
-                VerticalAlignment="Top"
-                Width="158"
-                HorizontalContentAlignment="Center"
-                Click="button_Click"
-                FontWeight="Bold"
-                Foreground="White"
-                Background="#FF575757" />
-        -->
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+        
+        
+        
     </Grid>
 </Window>
