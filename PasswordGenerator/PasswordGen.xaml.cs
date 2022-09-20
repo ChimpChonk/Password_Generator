@@ -56,5 +56,11 @@ namespace PasswordGenerator
         {
             Clipboard.SetText((string)PasswordLabel.Content);
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            Password.Content = mainWindow;
+        }
     }
 }
