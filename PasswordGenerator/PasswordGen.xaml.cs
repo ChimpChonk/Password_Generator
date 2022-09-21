@@ -34,7 +34,7 @@ namespace PasswordGenerator
                 randomPassword += allCharacters[randomNum];
             }
 
-            PasswordLabel.Content = randomPassword;
+            PasswordLabel.Text = randomPassword;
         }
         public PasswordGen()
         {
@@ -54,7 +54,7 @@ namespace PasswordGenerator
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Clipboard.SetText((string)PasswordLabel.Content);
+            Clipboard.SetText((string)PasswordLabel.Text);
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)

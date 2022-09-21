@@ -43,13 +43,13 @@ namespace PasswordGenerator {
         
         #line 32 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label PasswordLabel;
+        internal System.Windows.Controls.TextBlock PasswordLabel;
         
         #line default
         #line hidden
         
         
-        #line 45 "..\..\PasswordGen.xaml"
+        #line 46 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PasswordLengthLabel;
         
@@ -57,7 +57,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 57 "..\..\PasswordGen.xaml"
+        #line 58 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider slider;
         
@@ -65,7 +65,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 70 "..\..\PasswordGen.xaml"
+        #line 71 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button button;
         
@@ -73,7 +73,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 83 "..\..\PasswordGen.xaml"
+        #line 84 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button BtnBack;
         
@@ -81,7 +81,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 93 "..\..\PasswordGen.xaml"
+        #line 96 "..\..\PasswordGen.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Frame Password;
         
@@ -119,7 +119,7 @@ namespace PasswordGenerator {
             switch (connectionId)
             {
             case 1:
-            this.PasswordLabel = ((System.Windows.Controls.Label)(target));
+            this.PasswordLabel = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 2:
             this.PasswordLengthLabel = ((System.Windows.Controls.Label)(target));
@@ -127,7 +127,7 @@ namespace PasswordGenerator {
             case 3:
             this.slider = ((System.Windows.Controls.Slider)(target));
             
-            #line 62 "..\..\PasswordGen.xaml"
+            #line 63 "..\..\PasswordGen.xaml"
             this.slider.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.slider_ValueChanged);
             
             #line default
@@ -136,7 +136,7 @@ namespace PasswordGenerator {
             case 4:
             this.button = ((System.Windows.Controls.Button)(target));
             
-            #line 77 "..\..\PasswordGen.xaml"
+            #line 78 "..\..\PasswordGen.xaml"
             this.button.Click += new System.Windows.RoutedEventHandler(this.button_Click);
             
             #line default
@@ -145,7 +145,7 @@ namespace PasswordGenerator {
             case 5:
             this.BtnBack = ((System.Windows.Controls.Button)(target));
             
-            #line 91 "..\..\PasswordGen.xaml"
+            #line 93 "..\..\PasswordGen.xaml"
             this.BtnBack.Click += new System.Windows.RoutedEventHandler(this.BtnBack_Click);
             
             #line default

@@ -41,7 +41,7 @@ namespace PasswordGenerator {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 34 "..\..\MainWindow.xaml"
+        #line 35 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock textBlock;
         
@@ -49,7 +49,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 45 "..\..\MainWindow.xaml"
+        #line 46 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button PGenerator;
         
@@ -57,7 +57,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 55 "..\..\MainWindow.xaml"
+        #line 56 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button LManager;
         
@@ -65,7 +65,7 @@ namespace PasswordGenerator {
         #line hidden
         
         
-        #line 64 "..\..\MainWindow.xaml"
+        #line 65 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Frame Main;
         
@@ -108,7 +108,7 @@ namespace PasswordGenerator {
             case 2:
             this.PGenerator = ((System.Windows.Controls.Button)(target));
             
-            #line 53 "..\..\MainWindow.xaml"
+            #line 54 "..\..\MainWindow.xaml"
             this.PGenerator.Click += new System.Windows.RoutedEventHandler(this.PGenerator_Click);
             
             #line default
