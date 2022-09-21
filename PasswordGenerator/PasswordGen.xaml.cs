@@ -52,7 +52,7 @@ namespace PasswordGenerator
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void BtnCopy_Click(object sender, RoutedEventArgs e)
         {
             Clipboard.SetText((string)PasswordLabel.Text);
         }
