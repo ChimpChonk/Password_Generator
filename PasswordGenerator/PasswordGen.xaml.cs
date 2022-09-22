@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,35 +21,23 @@ namespace PasswordGenerator
     /// </summary>
     public partial class PasswordGen : Page
     {
-        int currentPasswordLength = 0;
-        Random character = new Random();
+        AppLogic appLogic;
+        int passwordLength;
 
-        private void PasswordGenerate(int passwordLength)
-        {
-            string allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@$%^&*";
-            string randomPassword = "";
-
-            for (int i = 0; i < passwordLength; i++)
-            {
-                int randomNum = character.Next(0, allCharacters.Length);
-                randomPassword += allCharacters[randomNum];
-            }
-
-            PasswordLabel.Text = randomPassword;
-        }
         public PasswordGen()
         {
             InitializeComponent();
             slider.Minimum = 5;
             slider.Maximum = 20;
-            PasswordGenerate(5);
         }
 
         private void slider_ValueChanged(object sender, EventArgs e)
         {
-            currentPasswordLength = (int)slider.Value;
+            appLogic = new AppLogic();
+
+            passwordLength = (int)slider.Value;
             PasswordLengthLabel.Content = "Password Length: " + slider.Value.ToString();
-            PasswordGenerate(currentPasswordLength);
+
 
         }
 
