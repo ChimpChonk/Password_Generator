@@ -30,6 +30,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="5" />
         </Grid.RowDefinitions>
+        
 
         <TextBlock x:Name="textBlock"
                    TextWrapping="Wrap"
@@ -52,7 +53,7 @@
                 HorizontalAlignment="Center"
                 Click="PGenerator_Click" />
 
-       <!-- <Button x:Name="LManager"
+       <Button x:Name="LManager"
                 Grid.Column="1"
                 Grid.Row="3"
                 Grid.ColumnSpan="3"
@@ -60,9 +61,7 @@
                 Width="200"
                 Height="50"/>
 
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Grid.ColumnSpan="4" Grid.RowSpan="5"
-               Navigated="Main_Navigated" />
-        -->
+       
         <Frame x:Name="Main" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
     </Grid>
 </Window>
