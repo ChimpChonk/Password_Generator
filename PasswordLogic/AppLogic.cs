@@ -10,7 +10,7 @@ namespace PasswordLogic
     {
         private Random randomPassword;
 
-        private string _password;
+        private string _password = "";
         private string letters = "abcdefghijklmnopqrstuvwxyz";
         private string numbers = "0123456789";
         private string symbols = "!@£$%^&*()_+=-#';/.,";
@@ -23,43 +23,61 @@ namespace PasswordLogic
         private string CombinedPassword(bool capital, bool small, bool number, bool symbol, int passwordLength)
         {
             randomPassword = new Random();
-            for (int i = 0; i < passwordLength; i++)
+
+            if (capital == false && small == false && number == false && symbol == false)
             {
-                if (capital)
-                {
-                    letters = letters.ToUpper();
-                    _password += letters[randomPassword.Next(0, letters.Length)];
+                Console.WriteLine("False work?");
+                _password = "Click the check boxes";
+                return _password;
 
-                    if (_password.Length == passwordLength) break;
-                }
-
-                if (small)
-                {
-                    letters = letters.ToLower();
-                    _password += letters[randomPassword.Next(0, letters.Length)];
-
-                    if (_password.Length == passwordLength) break;
-                }
-
-                if (number)
-                {
-                    _password += numbers[randomPassword.Next(0, this.numbers.Length)];
-                    if (_password.Length == passwordLength) break;
-                }
-
-                if (symbol)
-                {
-                    _password += symbols[randomPassword.Next(0, this.symbols.Length)];
-                    if (_password.Length == passwordLength) break;
-                }
-
-                if (!capital && !small && !number && !symbol)
-                {
-                    _password = "Click the check boxes";
-                }
             }
 
-            return _password;
+            else
+            {
+
+                for (int i = 0; i < passwordLength; i++)
+                {
+
+
+                    if (capital == true)
+                    {
+                        letters = letters.ToUpper();
+                        _password += letters[randomPassword.Next(0, letters.Length)];
+                        Console.WriteLine("capital work?");
+
+                        if (_password.Length == passwordLength) break;
+                    }
+
+                    if (small == true)
+                    {
+                        letters = letters.ToLower();
+                        _password += letters[randomPassword.Next(0, letters.Length)];
+                        Console.WriteLine("small work?");
+
+                        if (_password.Length == passwordLength) break;
+                    }
+
+                    if (number == true)
+                    {
+                        _password += numbers[randomPassword.Next(0, this.numbers.Length)];
+                        Console.WriteLine("number work?");
+
+                        if (_password.Length == passwordLength) break;
+                    }
+
+                    if (symbol == true)
+                    {
+                        _password += symbols[randomPassword.Next(0, this.symbols.Length)];
+                        Console.WriteLine("symbol work?");
+
+                        if (_password.Length == passwordLength) break;
+                    }
+
+
+                }
+                return _password;
+            }
+
         }
 
         private string Password(string word)
@@ -67,7 +85,7 @@ namespace PasswordLogic
             randomPassword.Next();
 
             char[] chr = word.ToCharArray();
-            
+
             for (int i = 0; i < chr.Length; i++)
             {
                 int j = randomPassword.Next(chr.Length);

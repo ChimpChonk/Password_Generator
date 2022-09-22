@@ -35,8 +35,13 @@ namespace PasswordGenerator
         {
             appLogic = new AppLogic();
 
+
             passwordLength = (int)slider.Value;
             PasswordLengthLabel.Content = "Password Length: " + slider.Value.ToString();
+
+            PasswordLabel.Text = appLogic.NewPassword((bool)CapitalCheck.IsChecked, (bool)SmallCheck.IsChecked, (bool)NumbersCheck.IsChecked, (bool)SymbolsCheck.IsChecked, passwordLength);
+            //PasswordLabel.Text = "click the check boxex";
+
 
 
         }
