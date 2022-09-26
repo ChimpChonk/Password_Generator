@@ -17,72 +17,72 @@ namespace PasswordLogic
 
         public string NewPassword(bool capitalLetter, bool smallLetter, bool numbers, bool symbols, int passwordlength)
         {
-            return Password(CombinedPassword(capitalLetter, smallLetter, numbers, symbols, passwordlength));
+            if (capitalLetter == false && smallLetter == false && numbers == false && symbols == false)
+            {
+                return "Select one of the options";
+
+            }
+
+            else
+            {
+                return Password(CombinedPassword(capitalLetter, smallLetter, numbers, symbols, passwordlength));
+
+            }
         }
 
         private string CombinedPassword(bool capital, bool small, bool number, bool symbol, int passwordLength)
         {
             randomPassword = new Random();
 
-            if (capital == false && small == false && number == false && symbol == false)
-            {
-                Console.WriteLine("False work?");
-                _password = "Click the check boxes";
-                return _password;
-
-            }
-
-            else
+            for (int i = 0; i < passwordLength; i++)
             {
 
-                for (int i = 0; i < passwordLength; i++)
+
+                if (capital == true)
                 {
+                    letters = letters.ToUpper();
+                    _password += letters[randomPassword.Next(0, letters.Length)];
+                    Console.WriteLine("capital work?");
 
-
-                    if (capital == true)
-                    {
-                        letters = letters.ToUpper();
-                        _password += letters[randomPassword.Next(0, letters.Length)];
-                        Console.WriteLine("capital work?");
-
-                        if (_password.Length == passwordLength) break;
-                    }
-
-                    if (small == true)
-                    {
-                        letters = letters.ToLower();
-                        _password += letters[randomPassword.Next(0, letters.Length)];
-                        Console.WriteLine("small work?");
-
-                        if (_password.Length == passwordLength) break;
-                    }
-
-                    if (number == true)
-                    {
-                        _password += numbers[randomPassword.Next(0, this.numbers.Length)];
-                        Console.WriteLine("number work?");
-
-                        if (_password.Length == passwordLength) break;
-                    }
-
-                    if (symbol == true)
-                    {
-                        _password += symbols[randomPassword.Next(0, this.symbols.Length)];
-                        Console.WriteLine("symbol work?");
-
-                        if (_password.Length == passwordLength) break;
-                    }
-
-
+                    if (_password.Length == passwordLength) break;
                 }
-                return _password;
+
+                if (small == true)
+                {
+                    letters = letters.ToLower();
+                    _password += letters[randomPassword.Next(0, letters.Length)];
+                    Console.WriteLine("small work?");
+
+                    if (_password.Length == passwordLength) break;
+                }
+
+                if (number == true)
+                {
+                    _password += numbers[randomPassword.Next(0, this.numbers.Length)];
+                    Console.WriteLine("number work?");
+
+                    if (_password.Length == passwordLength) break;
+                }
+
+                if (symbol == true)
+                {
+                    _password += symbols[randomPassword.Next(0, this.symbols.Length)];
+                    Console.WriteLine("symbol work?");
+
+                    if (_password.Length == passwordLength) break;
+                }
+
+
             }
+            return _password;
+
 
         }
 
         private string Password(string word)
         {
             randomPassword.Next();
+
 
             char[] chr = word.ToCharArray();
 
