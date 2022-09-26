@@ -14,54 +14,6 @@
         Foreground="White">
 
     <Grid>
-        <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="5" />
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="5" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="5" />
-        </Grid.RowDefinitions>
-        
-
-        <TextBlock x:Name="textBlock"
-                   TextWrapping="Wrap"
-                   Text="Password Manager"
-                   Grid.Row="1"
-                   Grid.Column="1"
-                   Grid.ColumnSpan="3"
-                   FontSize="30"
-                   FontWeight="Bold"
-                   Foreground="#FF0DFF23"
-                   TextAlignment="Center" />
-
-        <Button x:Name="PGenerator"
-                Grid.Column="1"
-                Grid.Row="2"
-                Grid.ColumnSpan="3"
-                Content="Generate Password"
-                Width="200"
-                Height="50"
-                HorizontalAlignment="Center"
-                Click="PGenerator_Click" />
-
-       <Button x:Name="LManager"
-                Grid.Column="1"
-                Grid.Row="3"
-                Grid.ColumnSpan="3"
-                Content="Login Manager"
-                Width="200"
-                Height="50"/>
-
-       -->
         <Frame x:Name="Mainwin" />
     </Grid>
 </Window>

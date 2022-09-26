@@ -11,6 +11,6 @@
       Foreground="White">
 
     <Grid>
-        
+        <ListBox />
     </Grid>
 </Page>

@@ -28,7 +28,7 @@
             <RowDefinition Height="5" />
         </Grid.RowDefinitions>
 
-
+        
         <TextBlock x:Name="textBlock"
                    TextWrapping="Wrap"
                    Text="Password Manager"
