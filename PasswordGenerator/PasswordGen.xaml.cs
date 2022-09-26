@@ -53,8 +53,7 @@ namespace PasswordGenerator
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            Password.Content = mainWindow;
+            PasswordPage.Content = new MainPage();
         }
     }
 }

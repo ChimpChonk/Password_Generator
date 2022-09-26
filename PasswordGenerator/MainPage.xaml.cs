@@ -16,20 +16,18 @@ using System.Windows.Shapes;
 namespace PasswordGenerator
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Page
     {
-
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
-            Mainwin.Content = new MainPage();
         }
 
-        //private void PGenerator_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Main.Content = new PasswordGen();
-        //}
+        private void PGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            MainCon.Content = new PasswordGen();
+        }
     }
 }
