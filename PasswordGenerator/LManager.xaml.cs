@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LoginManagerLogic;
 
 namespace PasswordGenerator
 {
@@ -28,6 +29,27 @@ namespace PasswordGenerator
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             LManagerPage.Content = new MainPage();
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DataBase data = new DataBase();
+
+            data.webSite = Website.Text;
+            data.userName = User.Text;
+            data.userPassword = UserPassword.Text;
+
+            dataGrid.Items.Add(data);
+        }
+
+        private void DataGridCheckBoxColumn_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void FrameworkElement_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
         }
     }
 }
