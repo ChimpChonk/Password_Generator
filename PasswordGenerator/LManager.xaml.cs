@@ -24,5 +24,10 @@ namespace PasswordGenerator
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            LManagerPage.Content = new MainPage();
+        }
     }
 }

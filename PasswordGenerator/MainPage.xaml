@@ -56,11 +56,14 @@
                 Grid.ColumnSpan="3"
                 Content="Login Manager"
                 Width="200"
-                Height="50" />
+                Height="50"
+                Click="LManager_Click" />
 
 
         <Frame x:Name="MainCon"
                Grid.ColumnSpan="5"
-               Grid.RowSpan="6" />
+               Grid.RowSpan="6"/>
+
+        <!--               Navigated="MainCon_Navigated"-->
     </Grid>
 </Page>
