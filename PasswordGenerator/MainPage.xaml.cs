@@ -29,5 +29,10 @@ namespace PasswordGenerator
         {
             MainCon.Content = new PasswordGen();
         }
+
+        private void LManager_Click(object sender, RoutedEventArgs e)
+        {
+            MainCon.Content = new LManager();
+        }
     }
 }
