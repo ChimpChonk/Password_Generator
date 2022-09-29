@@ -42,14 +42,5 @@ namespace PasswordGenerator
             dataGrid.Items.Add(data);
         }
 
-        private void DataGridCheckBoxColumn_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void FrameworkElement_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-
-        }
     }
 }
