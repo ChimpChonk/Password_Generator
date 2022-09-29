@@ -154,16 +154,13 @@
                 <DataGridTextColumn Header="Password"
                                     Binding="{Binding userPassword}"
                                     Width="*" />
-                <DataGridCheckBoxColumn Header="Check"
-                                        Width="50"
-                                        IsThreeState="True">
-                   <!-- <DataGridCheckBoxColumn.CellStyle>
+
+                <!-- <DataGridCheckBoxColumn.CellStyle>
                         <Style>
                             <EventSetter Event="CheckBox.Checked"
                                          Handler="OnChecked" />
                         </Style>
                     </DataGridCheckBoxColumn.CellStyle> -->
-                </DataGridCheckBoxColumn>
             </DataGrid.Columns>
         </DataGrid>
 
