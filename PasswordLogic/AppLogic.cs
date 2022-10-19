@@ -42,7 +42,6 @@ namespace PasswordLogic
                 {
                     letters = letters.ToUpper();
                     _password += letters[randomPassword.Next(0, letters.Length)];
-                    Console.WriteLine("capital work?");
 
                     if (_password.Length == passwordLength) break;
                 }
@@ -51,7 +50,6 @@ namespace PasswordLogic
                 {
                     letters = letters.ToLower();
                     _password += letters[randomPassword.Next(0, letters.Length)];
-                    Console.WriteLine("small work?");
 
                     if (_password.Length == passwordLength) break;
                 }
@@ -59,16 +57,12 @@ namespace PasswordLogic
                 if (number == true)
                 {
                     _password += numbers[randomPassword.Next(0, this.numbers.Length)];
-                    Console.WriteLine("number work?");
-
                     if (_password.Length == passwordLength) break;
                 }
 
                 if (symbol == true)
                 {
                     _password += symbols[randomPassword.Next(0, this.symbols.Length)];
-                    Console.WriteLine("symbol work?");
-
                     if (_password.Length == passwordLength) break;
                 }
 

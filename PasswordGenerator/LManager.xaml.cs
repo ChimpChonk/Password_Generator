@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LoginManagerLogic;
+using System.IO;
+using System.Windows.Forms;
 
 namespace PasswordGenerator
 {
@@ -21,6 +23,7 @@ namespace PasswordGenerator
     /// </summary>
     public partial class LManager : Page
     {
+
         public LManager()
         {
             InitializeComponent();
@@ -41,6 +44,5 @@ namespace PasswordGenerator
 
             dataGrid.Items.Add(data);
         }
-
     }
 }
