@@ -4,3 +4,9 @@ C:\Users\sapo\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\Log
 C:\Users\sapo\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.csproj.CoreCompileInputs.cache
 C:\Users\sapo\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.dll
 C:\Users\sapo\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.pdb
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\bin\Debug\LoginManagerLogic.dll
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\bin\Debug\LoginManagerLogic.pdb
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.csproj.AssemblyReference.cache
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.csproj.CoreCompileInputs.cache
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.dll
+C:\Users\sp\Desktop\projects\PasswordGenerator\LoginManagerLogic\obj\Debug\LoginManagerLogic.pdb
