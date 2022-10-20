@@ -17,6 +17,7 @@ namespace PasswordLogic
 
         public string NewPassword(bool capitalLetter, bool smallLetter, bool numbers, bool symbols, int passwordlength)
         {
+            //checkbox slected or not
             if (capitalLetter == false && smallLetter == false && numbers == false && symbols == false)
             {
                 return "Select one of the options";
